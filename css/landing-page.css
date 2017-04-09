@@ -1,0 +1,355 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+  background: url(../img/me2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100; /*was 700*/
+}
+
+.test {
+    /*background-color: rgba(0, 0, 0, 0.72);*/
+    background-color: transparent;
+    margin-left: 20%;
+    margin-right:20%;
+    /*
+    border-radius: 25px;
+    border: 2px solid #f8f8f8;
+    */
+    border: transparent;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    /*box-shadow: 5px 5px 50px black;*/
+    padding: 20px;
+    color: black;
+
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.9);
+
+}
+
+.left h3 {
+    text-align: left;
+    line-height: 120%;
+}
+
+.left li {
+    margin-bottom: 30px;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.72);
+    width:60%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.topnav {
+    font-size: 14px; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 100; /* was 400 */
+    /*color: #f8f8f8;*/
+    color: black;
+}
+
+.row h2{
+    color: grey;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    /*color: #f8f8f8;*/
+    /*f89923*/
+    /*background: url(../img/intro-bg.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+
+
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em; /* was 5*/
+    
+}
+
+.intro-divider {
+    width: 80%; /* was 400px */
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /*border: 2px solid #f8f8f8;
+    padding: 10px;*/
+}
+
+.content-section-a {
+    padding: 50px 0;
+    /*background-color: #f8f8f8;*/
+    background-color: rgba(248, 248, 248, 0.95);
+    /*box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.5);*/
+}
+
+.blackify {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.imgshadow {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    /*
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    */
+    background-color: rgba(248, 248, 248, 0.95);
+    /*box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.5);*/
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    color: #f8f8f8;
+}
+
+.section-heading-spacer {
+    
+    float: left;
+    width: 200px;/*
+    border-top: 3px solid #e7e7e7;
+    */
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid rgba(248,248,255,1);
+    box-shadow: 6px 4px 5px rgba(0,0,0,0.5);
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    /*background: url(../img/banner-bg.jpg) no-repeat center center;*/
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+}
+
+.banner h3 {
+    margin: 0;
+    /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
+    /*color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);*/
+    color: #D3D3D3;
+    /*opacity: 0.6;*/
+    font-weight: 100;
+    /*box-shadow: 3px 3px 100px #888888;*/
+    /*text-shadow: rgba(255,255,255,1) 0px 3px 1px; /* 0 3 2*/
+
+
+    /*font-size: 3em;*/
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+.myButton {
+    background-color: ;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    color: #F0F8FF;
+    /*padding: 15px 32px; */
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 4px;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 1px 1px 0px #888888; /* 3 3 6 */
+    border-color: transparent;
+    color: transparent;
+    text-shadow: rgba(200,200,200,0.8) 0px 3px 0px;
+}
+
+.myButton:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+    border-color: transparent;
+    color: rgba(255,255,255,1);
+}
+
+.insetBorder {
+    /*
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0px 40px 30px 1px rgba(255, 255, 255, .1);
+    */
+
+}
+
+.myText {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* this was to fix image center problem, but flexcontainer does it now, may be used for resizing and fixing row etc in the future */
+/* display:flex; still requireed in parent to use flexcontainer*/
+.content {
+    display: flex;
+    align-items: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex-direction: row;
+    /*flexcontainer wont work if align-items line is here because the columns will resize to min size*/
+    /*
+    align-items: center; 
+    */
+}
+
+.imgspacertop {
+    margin-top: 40px;
+
+}
+
+.flexcontainer {
+    display: flex; /* or inline-flex */
+    min-height: 100%;
+    flex-direction: column; /* or column */
+    /*
+    justify-content: center;
+    align-content: space-around;
+    */
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*
+.myButton:hover {
+cursor: pointer;
+background-color: transparent;
+text-decoration: none;
+color: #fff;
+}
+*/
+
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

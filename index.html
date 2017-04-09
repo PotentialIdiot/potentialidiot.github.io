@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BrainDamage</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <script>
+    $(window).scroll(function () {
+    /*
+        var scrollTop = $(window).scrollTop();
+        var os = $('.offsetStart').offset().top;
+        var height = $('.intro-header').height() - os;
+
+    if (((scrollTop - os) / height) < 0.7 && scrollTop > os) {
+        $('.blackify').css({
+            //'opacity': ((height - scrollTop + os) / height)
+            'background-color': 'rgba(0,0,0,' + ((scrollTop - os) / height) + ')'
+        });
+    }
+    */
+        var scrollTop = $(window).scrollTop();
+        var os = $('.offsetStart').offset().top;
+        var height = $('.intro-header').height();
+
+    if ((scrollTop / 1000) < 0.95 ) {
+        $('.blackify').css({
+            //'opacity': ((height - scrollTop + os) / height)
+            'background-color': 'rgba(248,248,248,' + (scrollTop / 1000) + ')'
+        });
+    }
+
+   if ((scrollTop / 1000) > 0.95 ) {
+        $('.blackify').css({
+            //'opacity': ((height - scrollTop + os) / height)
+            'background-color': 'rgba(248,248,248,' + 0.95 + ')'
+        });
+    }
+    /*
+    console.log("scroll: " + scrollTop);
+    console.log("offset: " + os);
+    console.log("height: " + height);
+    console.log(((scrollTop - os) / height));
+    */
+    });
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">TheLastOfUs</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Product</a>
+                    </li>
+                    <li>
+                        <a href="#services">Process</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Documents</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header blackify" >
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message white">
+                        <h1>Brain Damage</h1>
+                        <h3>An Interactive Prototype By TheLastOfUs</h3>
+                        <hr class="intro-divider">
+                    </div>
+                </div>
+                <div class="col-lg-12 offsetStart">
+                    <div class="intro-message black">
+                        <div class="test">
+                        <h1>What is BrainDamage?</h1>
+                        <h3>BrainDamage is an interactive prototype which incorporates a Brain-Computer-Interface device called a MindWave to control a physical hammer.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="intro-message black">
+                        <div class="test left">
+                        <h1>How is it played?</h1>
+                        <h3>
+                            <ol>
+                                <li>The gameplay is fairly simple. Put on the MindWave and wait for a blue light to appear.</li>
+                                <li>A blue light means it has started.</li>
+                                <li>Each subsequent light represents an increase in difficulty.</li>
+                                <li>Find a way to focus your attention, if your method is working, the hammer would rotate further away from the cat.</li>
+                                <li>Should your attention dip below the minimum threshold at any time, the hammer smashes the cat.</li>
+                            </ol>
+                        </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix" ></div>
+                    <h2 class="section-heading">Brainstorming</h2>
+                    <p class="lead">The first few weeks of the studio course was about generating and developing ideas. We were initially headed towards <font color="orange">Mood&Emotions</font>. We sought to develop something along the lines of visualising human emotions in the real world.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/ipad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Experimenting with technology</h2>
+                    <p class="lead">While we were trying to extract <font color="orange">Mood&Emotions</font> from an assortment of various hardware, we realised it was close to impossible to develop our initial idea due to available hardware limitations. However, our experiments with the MindWave did not leave us hanging. While the MindWave was not able to detect human emotions, it was able to track a persons <font color="lightblue">Attention</font> values.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/mindwave.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">The First Idea: Attention Visualisation</h2>
+                    <p class="lead">Still stuck on the mindset of emotion visualisation, our teammate, Mr. Kent's idea was distinctly built upon the same train of thought. He wanted to visualise attention into a physical object, using lights and graph-like waves to depict the attention values captured by the MindWave. Alas, the process of design thinking set us straight. It was not a good idea, at least, it was not good enough.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/visualisation.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->    
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">The Second Idea: BrainDamage</h2>
+                    <p class="lead">The second idea was to develop a physical interaction game while using the MindWave as the input device. I came up the idea of representing an attention meter with a physical hammer and the use a porcelain cat as a destructible victim object for emotional impact. Although BrainDamage hardly represents our original theme of <font color="orange">Mood&Emotions</font>, BrainDamage has <font color="orange">Emotions</font> incorporated in various ways, a cute porcelain cat, difficulty phases, and physical movements of the hammer are some examples.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/poster.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <!--TEST-->
+        <div class="content-section-b">
+
+        <div class="container">
+
+<div class="row content">
+
+  <div class="col-md-6">
+    <strong>
+      <a href="#/buildings/1">Central park</a>
+    </strong>
+  </div>
+  <div class="col-md-6">
+    <span>The description for cenanorama coanorama coanorama coanorama coanorama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanorama cotral park description for the central parkThe description for cenanorama coanorama coanorama coanorama coanorama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanorama cotral park description for the central parkThe description for cenanorama coanorama coanorama coanorama coanorama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanorama cotral park description for the central parkThe description for cenanorama coanorama coanorama coanorama coanorama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanoramrama coanorama coanorama cotral park description for the central park</span>
+  </div>
+</div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!--Test-->
+
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Brain Training</h2>
+                    <p class="lead">Although we did not intentionally develop the prototype as a brain training tool, we discovered that it may be useful as one. Current commercial brain training systems are similar to flash based web games, except that the gameplay is specifically developed to train a cognitive function such as <font color="lightblue">Attention or Memory</font>. BrainDamage is a unique way for brain training, by actually interfacing with the brain and capturing attention values into a physical object, players are able to actually see whats happening in their brains. Also the game design which depends upon players ability to manipulate their attention in real-time to save the cat forces players to find their own way to focus their attention. Each and every player has a different way to focus their own attention, and thus relates as an open-ended style for learning.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/brain.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Development Pitfalls</h2>
+                    <p class="lead">While developing the prototype, there were many challanges that we had to face. The early stages of testing revealed that the duration of the game was a lacking in complexity, a solution conceived by Mr. Kent was to implement difficulty stages into the game. Another bout of testing revealed that our difficulty was too difficult, even though it was tailored based on logic ( a value of from the MindWave 50 means neither an increased or decrease attention state ). Hence we had to develop the stages by averaging the general public's skill level by multiple public testings. Another huge issue encountered was the overall emotional impact. Servo speed limitations means the hammer was not actually capable smashing the cat, at best it was tapping the cat on the head. This was the biggest challenged I had to deal with, working alone, I came up with a solution which was not very good. Calling on the help of my engineer, Mr. Kent, we spent hours trying to improve my solution. The discussions we had eventually sparked something in my brain, I thought about bicycle gear systems and how we could use it to amplify the servo speed. With a great solution in hand, I left it up Mr. Kent to engineer the required gears.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/gears.jpg" alt="">
+                    <img class="img-responsive imgshadow" src="img/gears2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Development Pitfalls 2</h2>
+                    <p class="lead">Being the only programmer in the group while having to micro-manage everything else project related was a really difficult task. I have Mr. Kent to thank for handling most of the engineering and Mr. Harrison for the videos and posters. Coming up with the code were the usual difficulties of programming, nothing exceptionally hard. The major problem was the prototype decided to failed approximate 24 hours before the exhibit. Although multiple sections of code has to be lobotomized, they did not affect the main function of the prototype. The sections of code removed were things related to "Animating the hammer in different movement styles" and "Playful win/lose scenarios". Although they were not that important, I was disappointed because I believed, the prototype would be significantly more playful and interesting to players. Most of the time spent with programming issues were because we could not find the source of the errors, was it the MindWave, the Arduino board, the Arduino code, the Python code or the power issues.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/arduino.jpg" alt="">
+                    <img class="img-responsive imgspacertop imgshadow" src="img/code.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Design Compromises</h2>
+                    <p class="lead">A couple of changes had to be done to the original idea before we could build it. Firstly, we could not use a porcelain cat due to costs and safety issues. Therefore, we adapted to using origami paper cats instead. Secondly, with the material available, using a real hammer would be impossible, also not needed if we are using a paper cats. User feedback strongly hinted towards a multiplayer game design, while I played with the idea and developed several theorethical models, I decided I had to scrap it because of multiple issues such as team motivation and time constraints.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6 flexcontainer">
+                    <img class="img-responsive imgshadow" src="img/origami.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Evaluation & Reflections</h2>
+                    <p class="lead">Although I had serious doubts about the project's success. Exhibit day came and it turned out to be a huge success. The concept of brain-computer-interface certainly captured the attention of the masses, as was demonstrated by the near unwavering stream of participants to our booth. A pleasant observation about using a physical interaction was that it could be easily viewed by other non-participants. We intended BrainDamage to be a single player game but we realise on exhibit day that it does more than that. It brings social elements as well, friends would help/hinder their friend who is participating and would sometimes turn it into a competition. I believe that the social interaction could be a helpful addition to brain training, the same way social interaction has its place in certain learning situations.</p>
+                    <p class="lead">I believe we managed to achieve our original intentions that the prototype would allow players to find their own techniques to alter their attention levels. The first observation is players would ask us what to focus on. We would give them some tips on how they should try. The players would usually perform badly on the first try but on subsequent attempts would show an improvement as they find out what works for them. One of our design students who frequently played with our prototype has developed the ability to accurate change his attention levels. He is now able to kill the cat on demand.</p>
+                    <p class="lead">The goal of increasing brain training awareness could be argued to be successful. A rough estimate of 109 participants has been recorded and a significant amount of them requested additional explanation regarding the brainwave topic area as well as details on the MindWave hardware. Frequently, we observed that players would bring their friends and family to our booth to try out the game. I consider this to be a strong indicator of interest and consequently brings about greater awareness about brain training.</p>
+                    <p class="lead">An overlooked problem was the feeling of awkwardness or insecurity the players had while wearing the MindWave. The importance of social skills were apparent at the exhibit and we have to thank Mr. Kent for keeping up the hard work throughout the whole period by interacting with participants. The majority of awkward moments were due to the waiting time for the MindWave to connect to the person. Explaining the instructions of the game during this time was important as it helps to set their mind at ease.</p>
+                    <p class="lead">The final score of 47 cats killed and 62 cats saved suggests that the level system was appropriate to the general skill level of players at the exhibit. Another interpretation developed by listening to the frequency of participants questions such as "Can I kill the cat instead" and "Can I have another go to try and kill the cat" demonstrates that the emotional impact is not very strong, as I presume that participants would be more hesitant to destroy a porcelain cat. However, emotional impact is definitely there judging by the reactions of the players as they play.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 flexcontainer">
+                    <div class="col-md-12">
+                    <img class="img-responsive imgshadow" src="img/completed.jpg" alt="">
+                    </div>
+                    <div class="col-md-12">
+                    <img class="img-responsive imgshadow" src="img/completed2.jpg" alt="">
+                    </div>
+                    <div class="col-md-12">
+                    <img class="img-responsive imgshadow" src="img/participant.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->
+
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 myText insetBorder">
+                    <h3>Emotion Bubble</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="materials/BubbleEmotions.pdf" class="myButton"><span class="myText">Presentation (PDF)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </br>
+            <div class="row">
+                <div class="col-lg-12 myText insetBorder">
+                    <h3>Project Proposal & Presentation</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="materials/moodprojection.pdf" class="myButton"><span class="myText">Report (PDF)</span></a>
+                        </li>
+                        <li>
+                            <a href="materials/MoodProjection.pptx" class="myButton"><span class="myText">Presentation (PDF)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </br>
+            <div class="row">
+                <div class="col-lg-12 myText insetBorder">
+                    <h3>Project Prototype / Proof of Concept</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="materials/Assignment3/AppraisalReport.pdf" class="myButton"><span class="myText">Appraisal Report (PDF)</span></a>
+                        </li>
+                        <li>
+                            <a href="materials/Assignment3/Storyboard.pdf" class="myButton"><span class="myText">Storyboard (PDF)</span></a>
+                        </li>
+                        <li>
+                            <a href="materials/Assignment3/Poster.jpg" class="myButton"><span class="myText">Poster (JPG)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 myText">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="materials/Assignment3/ProgressReport.pdf" class="myButton"><span class="myText">Progress Report (PDF)</span></a>
+                        </li>
+                        <li>
+                            <a href="materials/Assignment3/Presentation.pptx" class="myButton"><span class="myText">Presentation (PPTX)</span></a>
+                        </li>
+                        <li>
+                            <a href="materials/Assignment3/SuccessCriteria.pdf" class="myButton"><span class="myText">Success Criteria (PDF)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </br>
+            <div class="row">
+                <div class="col-lg-12 myText insetBorder">
+                    <h3>Exhibition</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="materials/braindamage.jpg" class="myButton"><span class="myText">Poster (JPG)</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=GRDCHeMajp0" class="myButton"><span class="myText">Video (Youtube)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </br>
+            <div class="row">
+                <div class="col-lg-12 myText insetBorder">
+                    <h3>Online Reflective Journal</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="http://deco3850.uqcloud.net/students/s4378333" class="myButton"><span class="myText">Journal</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </br>
+            <div class="row">
+                <div class="col-lg-12 myText insetBorder">
+                    <h3>Reflective Report</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="list-inline banner-social-buttonss">
+                        <li>
+                            <a href="materials/DECO3850ReflectionWengHouChan.pdf" class="myButton"><span class="myText">Report</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">TheLastOfUs</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">Product</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Process</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Documents</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
