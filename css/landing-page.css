@@ -63,13 +63,17 @@ h6 {
 .white {
     color: white;
     background-color: rgba(0, 0, 0, 0.72);
-    width:60%;
+    width:55vw;
+    height:85vh;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 30%;
     padding-left: 10%;
     padding-right: 10%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .engrave {
@@ -148,8 +152,16 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em; /* was 5*/
     color: rgba(248,248,248,0.9);
+    -webkit-flex:1 0 auto;
     
 }
+
+/* stop flex column from overlapping */
+/*
+.intro-message > h1:first-child {
+ -webkit-flex:1 0 auto;
+}
+*/
 
 .intro-divider {
     width: 80%; /* was 400px */
@@ -160,7 +172,7 @@ h6 {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     color: rgba(248,248,248,0.9);
-    
+    -webkit-flex:1 0 auto;
 }
 
 @media(max-width:767px) {
